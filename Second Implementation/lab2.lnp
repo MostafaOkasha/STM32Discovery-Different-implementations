@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+".\stm32f4xx_rng.o"
+".\main.o"
+".\stm32f4xx_it.o"
+".\system_stm32f4xx.o"
+".\eeprom.o"
+".\startup_stm32f429_439xx.o"
+".\misc.o"
+".\stm32f4xx_adc.o"
+".\stm32f4xx_dma.o"
+".\stm32f4xx_dma2d.o"
+".\stm32f4xx_exti.o"
+".\stm32f4xx_fmc.o"
+".\stm32f4xx_gpio.o"
+".\stm32f4xx_i2c.o"
+".\stm32f4xx_ltdc.o"
+".\stm32f4xx_rcc.o"
+".\stm32f4xx_spi.o"
+".\stm32f4xx_syscfg.o"
+".\stm32f4xx_tim.o"
+".\stm32f4xx_flash.o"
+".\stm32f429i_discovery.o"
+".\stm32f429i_discovery_lcd.o"
+".\stm32f429i_discovery_sdram.o"
+--library_type=microlib --strict --scatter ".\lab2.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\lab2.map" -o .\lab2.axf
